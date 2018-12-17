@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lenovo.myapplication">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutMe"
+            android:label="@string/title_activity_about_me"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.lenovo.myapplication.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Cennik"
+            android:label="@string/title_activity_cennik"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.lenovo.myapplication.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Kontakt"
+            android:label="@string/title_activity_kontakt"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.lenovo.myapplication.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Logowanie"
+            android:label="@string/title_activity_logowanie"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.lenovo.myapplication.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Rejestracja"
+            android:label="@string/title_activity_rejestracja"
+            android:parentActivityName=".Logowanie"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.lenovo.myapplication.Logowanie" />
+        </activity>
+        <activity
+            android:name=".Uzytkownk"
+            android:label="@string/title_activity_uzytkownk"
+            android:parentActivityName=".Logowanie"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.lenovo.myapplication.Logowanie" />
+        </activity>
+    </application>
+
+</manifest>
